@@ -180,7 +180,7 @@ end
 -- Unlike the old WML way, it is not saved which units have been researched,
 -- instead the sides current recruits are compared against these ones:
 anl.researchable_units = {}
-anl.researchable_units.drakish_units = {'Drake Fighter', 'Drake Clasher', 'Drake Burner', 'Drake Glider', 'Saurian Skirmisher', 'Saurian Augur' }
+anl.researchable_units.drakish_units = {'Drake Fighter', 'Drake Clasher', 'Drake Burner', 'Drake Glider'}
 anl.researchable_units.dwarvish_units = {'Dwarvish Fighter', 'Dwarvish Guardsman', 'Dwarvish Scout', 'Dwarvish Thunderer', 'Dwarvish Ulfserker', 'Gryphon Rider', 'Dwarvish Runesmith'}
 anl.researchable_units.elvish_units = {'Elvish Archer', 'Elvish Fighter', 'Elvish Scout', 'Wose'}
 anl.researchable_units.human_units = {'Spearman', 'Fencer', 'Heavy Infantryman', 'Sergeant', 'Bowman', 'Horseman', 'Cavalryman'}
@@ -189,7 +189,7 @@ anl.researchable_units.orcish_units = {'Orcish Grunt', 'Orcish Archer', 'Orcish 
 anl.researchable_units.outlaw_units = {'Thug', 'Thief', 'Footpad', 'Poacher', 'Wolf', 'Young Ogre'}
 anl.researchable_units.undead_units = {'Skeleton', 'Skeleton Archer', 'Vampire Bat', 'Ghost', 'Ghoul', wesnoth.unit_types['Skeleton Rider'] and 'Skeleton Rider'}
 anl.researchable_units.dunefolk_units = {'Dune Burner', 'Dune Soldier', 'Dune Skirmisher', 'Dune Rover', 'Dune Rider'}
-anl.researchable_units.merfolk_units = {'Naga Dirkfang', 'Naga Fighter', 'Naga Guard', 'Merman Fighter', 'Merman Hunter'}
+anl.researchable_units.merfolk_units = {'Merman Fighter', 'Merman Hunter', 'Merman Brawler'}
 anl.researchable_units.special_units = {'Giant Mudcrawler', 'Great Icemonax'}
 
 

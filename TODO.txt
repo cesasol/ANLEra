@@ -1,0 +1,16 @@
+✔ Nerf Wose Sapling (AI) @done(25-10-19 14:26)
+    ✔ Regen to 2 @done(25-10-19 18:58)
+✔ Split saurians from drakes @done(25-10-19 19:02)
+☐ Saurians add Naga
+☐ Remove Naga from Merfolk 
+☐ Lower price to merfolk houses
+☐ Destroy houses
+☐ Lower Saurian movment (AI)
+☐ Remove traits from Young Saurian (AI)
+    - Quick
+☐ Young Saurian lower ranged attacks to 1 (AI)
+☐ Dwarf Miner add ranged attack
+☐ Necrophage and Ghast add Plague
+✔ Goblins -> Grunts @done(25-10-19 18:58)
+✔ Peasant -> Sargent @done(25-10-19 18:58)
+☐ Corpse -> Skeleton, Goul
