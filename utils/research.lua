@@ -189,8 +189,8 @@ anl.researchable_units.orcish_units = {'Orcish Grunt', 'Orcish Archer', 'Orcish 
 anl.researchable_units.outlaw_units = {'Thug', 'Thief', 'Footpad', 'Poacher', 'Wolf', 'Young Ogre'}
 anl.researchable_units.undead_units = {'Skeleton', 'Skeleton Archer', 'Vampire Bat', 'Ghost', 'Ghoul', wesnoth.unit_types['Skeleton Rider'] and 'Skeleton Rider'}
 anl.researchable_units.dunefolk_units = {'Dune Burner', 'Dune Soldier', 'Dune Skirmisher', 'Dune Rover', 'Dune Rider'}
-anl.researchable_units.merfolk_units = {'Merman Fighter', 'Merman Hunter', 'Merman Brawler'}
-anl.researchable_units.special_units = {'Giant Mudcrawler', 'Great Icemonax'}
+anl.researchable_units.merfolk_units = {'Merman Fighter', 'Merman Hunter', 'Merman Brawler', 'Merman Brawler'}
+anl.researchable_units.special_units = {'Water Serpent', 'Kraken', 'Fire Ant Queen', 'Roc'}
 
 
 -- This functions returns a table containing an entry for each [message][option]
@@ -297,7 +297,7 @@ function anl.determine_faction(mage_type)
         not_yet_researched_units = anl.determine_choosable_recruits(anl.researchable_units.dunefolk_units)
 
     elseif anl.type_adv_tree(mage_type, 'Mermaid Initiate') then
-        not_yet_researched_units = anl.determine_choosable_recruits(anl.researchable_units.special_units)
+        not_yet_researched_units = anl.determine_choosable_recruits(anl.researchable_units.merfolk_units)
     else
 
         -- Extension point:
