@@ -189,8 +189,8 @@ anl.researchable_units.orcish_units = {'Orcish Grunt', 'Orcish Archer', 'Orcish 
 anl.researchable_units.outlaw_units = {'Thug', 'Thief', 'Footpad', 'Poacher', 'Wolf', 'Young Ogre'}
 anl.researchable_units.undead_units = {'Skeleton', 'Skeleton Archer', 'Vampire Bat', 'Ghost', 'Ghoul', wesnoth.unit_types['Skeleton Rider'] and 'Skeleton Rider'}
 anl.researchable_units.dunefolk_units = {'Dune Burner', 'Dune Soldier', 'Dune Skirmisher', 'Dune Rover', 'Dune Rider'}
-anl.researchable_units.merfolk_units = {'Merman Fighter', 'Merman Hunter', 'Merman Brawler', 'Merman Brawler'}
-anl.researchable_units.special_units = {'Water Serpent', 'Kraken', 'Fire Ant Queen', 'Roc'}
+anl.researchable_units.merfolk_units = {'Merman Fighter', 'Merman Hunter', 'Merman Brawler'}
+anl.researchable_units.special_units = {'Water Serpent', 'Kraken', 'Fire Ant Queen', 'Roc', 'Shadow Jumping Spider', 'Wild Wyvern'}
 
 
 -- This functions returns a table containing an entry for each [message][option]
@@ -313,6 +313,13 @@ function anl.determine_faction(mage_type)
             -- so this unit was enabled for the menu but not here.
             return
         end
+    end
+
+    -- Enable Monsters after all other recruitment is done.
+    if next(not_yet_researched_units) == nil then
+        local _ = wesnoth.textdomain 'wesnoth-ANLEra'
+        wesnoth.interface.add_chat_message( 'ANL', _'Now you can recruit monsters.')
+        not_yet_researched_units = anl.determine_choosable_recruits(anl.researchable_units.special_units)
     end
 
     -- Note: this function has two return values.

@@ -345,7 +345,7 @@ if wesnoth.unit_types['Merman Citizen'] == nil then
 else
     anl.negotiable_units.merfolk_units = {'Merman Fighter', 'Merman Hunter', 'Mermaid Initiate', 'Merman Citizen'}
 end
-anl.negotiable_units.hero_units = {'Elvish Hero', 'White Mage', 'Revenant', 'Dwarvish Berserker'}
+anl.negotiable_units.hero_units = {'Elvish Hero', 'White Mage', 'Death Squire', 'Dwarvish Berserker', 'Fire Drake', 'Dune Alchemist', 'Dragoon', 'Rogue', 'Merman Warrior', 'Naga Shield Guard', 'Orcish Ruler'}
 
 
 -- Checks whether the player can negotiate with that faction.
@@ -377,6 +377,8 @@ function anl.can_negotiate_with(other_faction)
     elseif other_faction == 'Merfolk' then
         partner = anl.negotiable_units.merfolk_units
     elseif other_faction == 'Heroes' then
+        partner = anl.negotiable_units.hero_units
+    elseif other_faction == 'Beasts' then
         partner = anl.negotiable_units.hero_units
     else
         -- Extension point:
